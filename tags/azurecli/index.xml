@@ -1,0 +1,381 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>azurecli on da5is.github.io</title>
+    <link>/tags/azurecli/</link>
+    <description>Recent content in azurecli on da5is.github.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 20 Feb 2021 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="/tags/azurecli/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Remote Whiteboarding for Online Meetings</title>
+      <link>/posts/remotewhiteboardingforonlinemeetings/</link>
+      <pubDate>Fri, 26 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/remotewhiteboardingforonlinemeetings/</guid>
+      <description>
+
+&lt;p&gt;With the majority of meetings and architecture sessions transitioning to online and remote in the past year, I&amp;rsquo;ve had to rethink how I handle remote design sessions and whiteboarding.  In the past, I&amp;rsquo;d just draw on the screen of my Surface Book.  This wasn&amp;rsquo;t a huge deal since I frequently was tossing the laptop in a bag a few times a week so it was always accessible.&lt;/p&gt;
+
+&lt;p&gt;After switching to only working from my home office, though, I needed to make some adjustments to my workspace to make it more comfortable and to improve the sound and video for online meetings.  Those changes prevented easy access to the laptop, so I started looking at options for a dedicated whiteboarding device.  I wasn&amp;rsquo;t really thrilled with any of the devices so I started experimenting more with the &lt;a href=&#34;https://www.microsoft.com/en-us/microsoft-365/microsoft-whiteboard/digital-whiteboard-app/?rtc=1&#34;&gt;Microsoft Whiteboard&lt;/a&gt; application.&lt;/p&gt;
+
+&lt;p&gt;Microsoft Whiteboard has always allowed you to have multiple participants on a single whiteboard- I wondered if you could have the same participant on two devices on the same whiteboard and have a similar, near-real time sync between the two devices.  As it turns out, you can!&lt;/p&gt;
+
+&lt;p&gt;First of all, make sure that you&amp;rsquo;re logged into both instances of Microsoft Whiteboard with the same account - illustrated by the orange box below.  I&amp;rsquo;ve found it&amp;rsquo;s easiest to open the whiteboard you want to work with on the &amp;ldquo;drawing&amp;rdquo; tablet and then finding the one that&amp;rsquo;s being updated on the laptop that&amp;rsquo;s joined to a meeting.  Once that&amp;rsquo;s done, though - it&amp;rsquo;s nearly seamless between the two.  The only piece you need to be aware of is that the viewport isn&amp;rsquo;t synced - you will need to do some adjustment on your laptop as you scroll around on your tablet.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/2021-03-26-10-49-24.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;That&amp;rsquo;s pretty much it!  Connect to your online meeting on your primary device and share the desktop / screen from the whiteboard that you&amp;rsquo;re updating on the tablet!&lt;/p&gt;
+
+&lt;h2 id=&#34;my-online-meeting-setup&#34;&gt;My Online Meeting Setup&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/2021-03-26-10-53-00.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;So, what does this look like day to day?  For the majority of meetings, this is my layout to remotely collaborate on whiteboards and documents.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;The primary screen is solely used for sharing.  In this picture, I&amp;rsquo;ve got the whiteboard application maximized, and you can see that&amp;rsquo;s the only window that&amp;rsquo;s open.  I highly recommend setting the taskbar to be visible on all displays, and have it only show taskbar buttons on &amp;ldquo;taskbar where window is open&amp;rdquo; - this allows you to tell at a glance if there&amp;rsquo;s anything minimized on a screeen that you might not want to share.&lt;/li&gt;
+&lt;li&gt;Two-thirds of my second screen displays the online meeting that I&amp;rsquo;m currently in - this allows me to see any chat, notice expressions, and whether someone raises their hand in the meeting.  I use &lt;a href=&#34;https://docs.microsoft.com/en-us/windows/powertoys/fancyzones&#34;&gt;PowerToys Fancy Zones&lt;/a&gt; to configure this screen layout.&lt;/li&gt;
+&lt;li&gt;On the final third of my second screen, I have a &lt;a href=&#34;https://code.visualstudio.com/&#34;&gt;VSCode&lt;/a&gt; instance open where I take notes in &lt;a href=&#34;https://www.dendron.so&#34;&gt;Dendron&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Off to the side, I have my &lt;a href=&#34;https://www.microsoft.com/en-us/surface/devices/surface-go/tech-specs&#34;&gt;generation 1 Surface Go&lt;/a&gt; that I use for whiteboarding.  It&amp;rsquo;s literally the only thing I use this device for since lockdown started - once we get back to going into offices, I&amp;rsquo;ll likely use this in conjunction with &lt;a href=&#34;https://azure.microsoft.com/en-us/services/virtual-desktop/&#34;&gt;Windows Virtual Desktop&lt;/a&gt; on &lt;a href=&#34;https://azure.microsoft.com/en-us/&#34;&gt;Azure&lt;/a&gt; to work on the road.&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Awesome, Lesser Known Azure CLI Extensions</title>
+      <link>/posts/awesomeazurecliextensions/</link>
+      <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/awesomeazurecliextensions/</guid>
+      <description>
+
+&lt;p&gt;As awesome as Azure CLI / azcli is out of the box, did you know that there are a couple of lesser known extensions that can really make a difference in your daily workflow?  Today I want to highlight three extensions that I use quite frequently, FZF, Self-Destruct and Show-Deployment.&lt;/p&gt;
+
+&lt;h2 id=&#34;fzf-for-azure-cli&#34;&gt;FZF for Azure CLI&lt;/h2&gt;
+
+&lt;h3 id=&#34;what-is-it&#34;&gt;What is it?&lt;/h3&gt;
+
+&lt;p&gt;FZF is a command-line fuzzy finder that can be used on practically any list.  &lt;a href=&#34;https://github.com/phealy/azure-cli-fzf&#34;&gt;FZF for Azure CLI&lt;/a&gt; extends this to enable a much more flexible way of setting the default subscription, location, or resource group within your Azure CLI session&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/2021-02-21-14-21-39.png&#34; alt=&#34;screenshot of az fzf&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;how-do-i-get-it&#34;&gt;How do I get it?&lt;/h3&gt;
+
+&lt;p&gt;You can install it by running the following Azure CLI commands:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;az extension install --name fzf
+az fzf install
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;how-do-i-use-it&#34;&gt;How do I use it?&lt;/h3&gt;
+
+&lt;p&gt;It&amp;rsquo;s as simple as running &lt;code&gt;az fzf&lt;/code&gt; followed by &lt;code&gt;subscription&lt;/code&gt;, &lt;code&gt;group&lt;/code&gt;, or &lt;code&gt;location&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;self-destruct-for-azure-cli&#34;&gt;Self Destruct for Azure CLI&lt;/h2&gt;
+
+&lt;h3 id=&#34;what-is-it-1&#34;&gt;What is it?&lt;/h3&gt;
+
+&lt;p&gt;Do you ever create something &amp;ldquo;temporary&amp;rdquo; in Azure and forget to clean it up until the end of the month when you see the bill?  This extension intercepts &lt;code&gt;az * create&lt;/code&gt; commands and lets you schedule automatic destruction of the resource.  Please note, this only fully works on the Windows Subsystem for Linux, Linux, and MacOS (I assume) platforms.&lt;/p&gt;
+
+&lt;h3 id=&#34;how-do-i-get-it-1&#34;&gt;How do I get it?&lt;/h3&gt;
+
+&lt;p&gt;Follow the instructions &lt;a href=&#34;https://github.com/noelbundick/azure-cli-extension-noelbundick/releases&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;how-do-i-use-it-1&#34;&gt;How do I use it?&lt;/h3&gt;
+
+&lt;p&gt;When you create Azure Resource Manager resources through &lt;code&gt;az * create&lt;/code&gt;, add the flag &lt;code&gt;--self-destruct&lt;/code&gt; followed by a time interval like 1d, 6h, 2h30m, 30m, etc.  A Logic App and Managed Identity will be provisioned in the resource group to delete the resource (or resource group) after that time has passed along with the Logic App itself.&lt;/p&gt;
+
+&lt;h2 id=&#34;show-deployment-for-azure-cli&#34;&gt;Show Deployment for Azure CLI&lt;/h2&gt;
+
+&lt;h3 id=&#34;what-is-it-2&#34;&gt;What is it?&lt;/h3&gt;
+
+&lt;p&gt;Do you ever find yourself wondering what the status or state of a current deployment is?  This extension allows you to &amp;ldquo;watch&amp;rdquo; the deployment as it happens - handy for long running portal deployments that you can watch from the CLI.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/2021-02-21-14-10-51.png&#34; alt=&#34;screenshot of show deployment&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;how-do-i-get-it-2&#34;&gt;How do I get it?&lt;/h3&gt;
+
+&lt;p&gt;Follow the instructions &lt;a href=&#34;https://github.com/stuartleeks/az-cli-extension-show-deployment&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;how-do-i-use-it-2&#34;&gt;How do I use it?&lt;/h3&gt;
+
+&lt;p&gt;Just run &lt;code&gt;az group deployment watch --resource-group&lt;/code&gt; followed by the resource-group you want to watch.  It&amp;rsquo;ll show you the status of the current deployment, or the last run deployment if none are currently in-progress.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Managing Python Versions on Windows with pyenv-win</title>
+      <link>/posts/managingpythonversionsonwindows/</link>
+      <pubDate>Mon, 18 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/managingpythonversionsonwindows/</guid>
+      <description>&lt;p&gt;Inspired by &lt;a href=&#34;https://twitter.com/mbbroberg&#34;&gt;Matt Broberg&amp;rsquo;s&lt;/a&gt; post outlining &lt;a href=&#34;https://opensource.com/article/19/5/python-3-default-mac&#34;&gt;the right way to install python on MacOS&lt;/a&gt;, this is the approach I use to manage python versions on Windows.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Disable the existing app execution alias for python.  By default, if you type &lt;code&gt;python&lt;/code&gt; in the terminal and it&amp;rsquo;s not installed, it&amp;rsquo;ll prompt you to install it from the Microsoft Store.  This isn&amp;rsquo;t the behavior we want, so we need to disable it.  Hit the Windows Search icon and search for &amp;lsquo;Manage App Execution Aliases&amp;rsquo; - after launching it, click on the two sliders for &amp;lsquo;App Installer&amp;rsquo; marked &amp;lsquo;python.exe&amp;rsquo; and python3.exe&amp;rsquo; to the left to disable these.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/app-execution-aliases.png&#34; alt=&#34;Image of the app exeuction alias search result&#34; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Next, we&amp;rsquo;re going to install pyenv-win.  This allows us to manage python versions on the command line and set defaults globally, or even locally in specific projects.  The [github repo]() for pyenv-win has several options to install; the one I prefer is to just execute &lt;code&gt;git clone https://github.com/pyenv-win/pyenv-win.git &amp;quot;$HOME/.pyenv&amp;quot;&lt;/code&gt; from a PowerShell prompt.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Now, to add the appropriate environment variables, run the following in the PowerShell prompt - this is all documented at the repo above.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-powershell&#34;&gt;[System.Environment]::SetEnvironmentVariable(&#39;PYENV&#39;,$env:USERPROFILE + &amp;quot;\.pyenv\pyenv-win\&amp;quot;,&amp;quot;User&amp;quot;)
+[System.Environment]::SetEnvironmentVariable(&#39;PYENV_HOME&#39;,$env:USERPROFILE + &amp;quot;\.pyenv\pyenv-win\&amp;quot;,&amp;quot;User&amp;quot;)
+[System.Environment]::SetEnvironmentVariable(&#39;path&#39;, $HOME + &amp;quot;\.pyenv\pyenv-win\bin;&amp;quot; + $HOME + &amp;quot;\.pyenv\pyenv-win\shims;&amp;quot; + $env:Path,&amp;quot;User&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Restart your PowerShell Window and run &lt;code&gt;pyenv&lt;/code&gt; - this should list the version and flags for pyenv.  To see the list of available versions, run &lt;code&gt;pyenv install -l&lt;/code&gt;.  If you don&amp;rsquo;t have a specific version you need, I recommend picking the most current version of python 3 for your version of Windows.  For 32-bit Windows, the appropriate versions have &amp;ldquo;-win32&amp;rdquo; at the end.  Install that version with &lt;code&gt;pyenv install $version&lt;/code&gt; where $version is the one you&amp;rsquo;re installing (ex:  &lt;code&gt;pyenv install 3.8.2&lt;/code&gt;).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Select the version you just installed as the global version by running &lt;code&gt;pyenv global $version&lt;/code&gt; where $version is the one you just installed (ex: &lt;code&gt;pyenv global 3.8.2&lt;/code&gt;).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Run &lt;code&gt;pyenv rehash&lt;/code&gt; to update pyenv with the newly installed version.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;That&amp;rsquo;s it!  Following that, you&amp;rsquo;ll have the ability to use pyenv to manage multiple python versions on Windows.  This is especially useful when you&amp;rsquo;re using other languages (such as Node) where modules may take a dependency on a specific python version.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>PSReadLine for Light Mode Terminals</title>
+      <link>/posts/psreadlineforlightmode/</link>
+      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/psreadlineforlightmode/</guid>
+      <description>&lt;p&gt;Over holiday break, I took the opportunity to rebuild my aging 2015 MacBook Air.  As part of that, I installed &lt;a href=&#34;https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-7.1&#34;&gt;PowerShell Core&lt;/a&gt; (to run the &lt;a href=&#34;https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-5.2.0&#34;&gt;AZ PowerShell module&lt;/a&gt;, naturally) and the default color scheme for psreadline on MacOS is&amp;hellip; awful.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/2021-01-02-16-04-56.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I mean, yellow on white isn&amp;rsquo;t legible on the best of days.  As I finished up the reinstall, I decided I wanted a PowerShell color scheme that matched the &lt;a href=&#34;https://github.com/mbadolato/iTerm2-Color-Schemes&#34;&gt;Material Theme for iTerm 2&lt;/a&gt;.  Looking at the color values in that theme, I came up with the following that can be added to the PowerShell profile (and easily adjusted to a different color scheme if you&amp;rsquo;d prefer).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-powershell&#34;&gt;$materialblack = &amp;quot;#2c2c2c&amp;quot;
+$materialbrightblack = &amp;quot;#535353&amp;quot;
+$materialred = &amp;quot;#c62727&amp;quot;
+$materialbrightred = &amp;quot;#ef524f&amp;quot;
+$materialgreen = &amp;quot;#558b2e&amp;quot;
+$materialbrightgreen = &amp;quot;#8bc249&amp;quot;
+$materialyellow = &amp;quot;#f9a824&amp;quot;
+$materialbrightyellow =  &amp;quot;#ffea3a&amp;quot;
+$materialblue = &amp;quot;#1564bf&amp;quot;
+$materialbrightblue = &amp;quot;#64b5f6&amp;quot;
+$materialmagenta = &amp;quot;#691e99&amp;quot;
+$materialbrightmagenta = &amp;quot;#ba67c8&amp;quot;
+$materialcyan = &amp;quot;#00828e&amp;quot;
+$materialbrightcyan = &amp;quot;#26c6da&amp;quot;
+$materialwhite = &amp;quot;#f2f2f2&amp;quot;
+$materialbrightwhite = &amp;quot;#e0e0e0&amp;quot;
+
+Set-PSReadLineOption -Colors @{
+ &amp;quot;Command&amp;quot;    = $materialyellow
+ &amp;quot;Number&amp;quot;    = $materialbrightblue
+ &amp;quot;Member&amp;quot;    = $materialbrightmagenta
+ &amp;quot;Operator&amp;quot;    = $materialbrightcyan
+ &amp;quot;Type&amp;quot;     = $materialbrightblack
+ &amp;quot;Variable&amp;quot;    = $materialgreen
+ &amp;quot;Parameter&amp;quot;    = $materialgreen
+ &amp;quot;ContinuationPrompt&amp;quot; = $materialbrightblack
+ &amp;quot;Default&amp;quot;     = $materialbrightblack
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;That configuration gets you the following colors in the terminal - please note, this only works on terminals other than the default MacOS terminal due to its lack of color support.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/2021-01-02-16-13-11.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Azure Files for Linux - Shared Non-Root Access</title>
+      <link>/posts/azurefilesformultipleusers/</link>
+      <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/azurefilesformultipleusers/</guid>
+      <description>
+
+&lt;p&gt;Recently, one of my co-workers asked whether anyone had experience accessing Azure Files from Linux but without using root or wide open permissions.  After looking at the documentation as well as the connect tab in the portal, neither mounted the Azure Files instance with permissions outside of root only access or 0777.  After a bit of testing, this is what I developed relative to restricting access to the mounted files instance to a specific group (along with creating test users and groups to demonstrate it).&lt;/p&gt;
+
+&lt;h1 id=&#34;prerequisites&#34;&gt;Prerequisites:&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;1 Linux Virtual Machine (VM) running Ubuntu.  In this example, the default login user for the VM is &amp;lsquo;thor&amp;rsquo;.&lt;/li&gt;
+&lt;li&gt;1 Storage Account setup for Files access.  In this example, the storage account is named &amp;lsquo;valhalla&amp;rsquo; and the shared filesystem is named &amp;lsquo;sharedfs&amp;rsquo;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;instructions&#34;&gt;Instructions&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Log into the Linux VM.&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Install required software:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;sudo apt update
+sudo apt install cifs-utils
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Create a group to control access to the shared filesystem&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;sudo groupadd azurefilesrw
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Add a few users and include them in the group listed previously:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;sudo useradd -s /bin/bash -d /home/loki/ -m -G azurefilesrw loki
+sudo useradd -s /bin/bash -d /home/odin/ -m -G azurefilesrw odin
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Add the original user to the group&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;sudo usermod -a -G azurefilesrw thor
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Navigate to the Azure Files blade in the portal by expanding the storage account, expanding &amp;lsquo;File shares&amp;rsquo;, and selecting the one you want to mount.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Click &amp;lsquo;Connect&amp;rsquo;, click the Linux tab on the right pane, and copy the shell script into a text file.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;In the shell script, modify the following to meet requirements:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Change the mount point if necessary - the default is /mnt/&amp;lt;name of storage account&amp;gt;.&lt;/li&gt;
+&lt;li&gt;Change the lines for creating the fstab entry and the mount to use the group listed above.&lt;/li&gt;
+&lt;li&gt;Change the dir_mode and file_mode to something more appropriate such 0770 and 0660.&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;An example script appears below with these changes:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;sudo mkdir /mnt/valhalla
+if [ ! -d &amp;quot;/etc/smbcredentials&amp;quot; ]; then
+sudo mkdir /etc/smbcredentials
+fi
+if [ ! -f &amp;quot;/etc/smbcredentials/valhalla.cred&amp;quot; ]; then
+sudo bash -c &#39;echo &amp;quot;username=valhalla&amp;quot; &amp;gt;&amp;gt; /etc/smbcredentials/valhalla.cred&#39;
+sudo bash -c &#39;echo &amp;quot;password=ThisObviouslyIsntMyPasswordButYoursShouldLookLikeARandomStringEndingWith==&amp;quot; &amp;gt;&amp;gt; /etc/smbcredentials/valhalla.cred&#39;
+fi
+sudo chmod 600 /etc/smbcredentials/valhalla.cred
+sudo bash -c &#39;echo &amp;quot;//valhalla.file.core.windows.net/sharedfs /mnt/valhalla cifs nofail,vers=3.0,credentials=/etc/smbcredentials/valhalla.cred,dir_mode=0770,file_mode=0660,serverino,gid=azurefilesrw&amp;quot; &amp;gt;&amp;gt; /etc/fstab&#39;
+sudo mount -t cifs //valhalla.file.core.windows.net/sharedfs /mnt/valhalla -o vers=3.0,credentials=/etc/smbcredentials/valhalla.cred,dir_mode=0770,file_mode=0660,serverino,gid=azurefilesrw
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;At this point, the users included in the azurefilesrw group should have access to read and write files within the mounted Azure Files share.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>About me</title>
+      <link>/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>&lt;p&gt;My name is Matt Davis.  I&amp;rsquo;m a mentor, husband, and father. I&amp;rsquo;m also currently a Cloud Solution Architect at Microsoft, but this blog, its content and opinions are my own.  I work in Central IL with large enterprises to ensure that their implementations on Azure are successful.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m a technologist at heart.  Ever since I read Neuromancer by William Gibson in my pre-teens, I&amp;rsquo;ve been excited about ubiquitous computing and its impact on society.  I feel that mainstream public cloud adoption dramatically changes everything from business to how individuals live their best life, both for good and bad.  I&amp;rsquo;m concerned about inequality of all types and the erosion of privacy.&lt;/p&gt;
+
+&lt;p&gt;I try to approach things with empathy; I feel like I&amp;rsquo;m at my best when working collaboratively with a diverse team that is excited about the possibilities.  It worries me that many people seem to be miserable; I&amp;rsquo;m always looking to bring joy into work.  Some days I&amp;rsquo;m more successful at this than others.&lt;/p&gt;
+
+&lt;p&gt;In my free time, I read fantasy and science fiction books and play video games.  I&amp;rsquo;m also currently working through a course on IoT in Azure and learning Javascript.&lt;/p&gt;
+
+&lt;p&gt;In the past, I&amp;rsquo;ve blogged under the handle &amp;lsquo;techmute,&amp;rsquo; but for the last 6+ years I&amp;rsquo;ve used the handle &amp;lsquo;da5is.&amp;rsquo;  Da5is is a play on my last name and the character Da5id in Neal Stephenson&amp;rsquo;s book &amp;lsquo;Snow Crash.&amp;rsquo;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Azure Training</title>
+      <link>/training/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/training/</guid>
+      <description>
+
+&lt;h2 id=&#34;azure-fundamentals&#34;&gt;Azure Fundamentals&lt;/h2&gt;
+
+&lt;p&gt;I consider these courses to be valuable pre-requisites for the deeper paths below.  If you&amp;rsquo;re new to Azure, or looking to round out your knowledge, I highly recommend starting with the following:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.microsoft.com/en-us/learn/paths/azure-fundamentals/&#34;&gt;Microsoft Learn – Fundamentals&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://azure.microsoft.com/en-us/resources/learn-azure-in-a-month-of-lunches/&#34;&gt;Azure in a Series of Lunches&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;azure-administrators-and-operators&#34;&gt;Azure Administrators and Operators&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.microsoft.com/en-us/learn/browse/?products=azure&amp;amp;roles=administrator&#34;&gt;Microsoft Learn - Azure Administrator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.pluralsight.com/role-iq/microsoft-azure-administrator?aid=7010a000001xDURAA2&#34;&gt;Pluralsight Online Courses - Azure Administrator&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;azure-solution-architects&#34;&gt;Azure Solution Architects&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.microsoft.com/en-us/learn/browse/?products=azure&amp;amp;roles=solution-architect&#34;&gt;Microsoft Learn - Azure Solution Architect&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.pluralsight.com/role-iq/microsoft-azure-solution-architect?aid=7010a000001xDURAA2&#34;&gt;Pluralsight Online Courses - Azure Solution Architect&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;azure-data-and-ai-engineers&#34;&gt;Azure Data and AI Engineers&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.microsoft.com/en-us/learn/browse/?roles=data-engineer&amp;amp;products=azure&#34;&gt;Microsoft Learn – Azure Data Engineer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.microsoft.com/en-us/learn/browse/?roles=ai-engineer&amp;amp;products=azure&#34;&gt;Microsoft Learn – Azure AI Engineer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://azurecosmosdb.github.io/labs/&#34;&gt;Azure Cosmos DB Workshop&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;azure-developers&#34;&gt;Azure Developers&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.microsoft.com/en-us/learn/browse/?roles=developer&amp;amp;products=azure&#34;&gt;Microsoft Learn – Azure Developer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://azure.microsoft.com/en-us/campaigns/developer-guide/&#34;&gt;Developer’s Guide to Azure&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.pluralsight.com/role-iq/microsoft-azure-developer?aid=7010a000001xDURAA2&#34;&gt;Pluralsight Online Courses – Azure Developer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://azure.microsoft.com/mediahandler/files/resourcefiles/kubernetes-learning-path/Kubernetes%20Learning%20Path%20version%201.0.pdf?utm_campaign=ossonazure&#34;&gt;50 Days from Zero to Hero with Kubernetes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;azure-devops-github&#34;&gt;Azure Devops / GitHub&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.microsoft.com/en-us/learn/browse/?products=azure&amp;amp;term=Devops&#34;&gt;Microsoft Learn – Azure Devops&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://azuredevopslabs.com/&#34;&gt;Azure Devops Learning Labs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://lab.github.com/&#34;&gt;GitHub Learning Lab&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://githubtraining.github.io/training-manual/#/&#34;&gt;GitHub Training Manual&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;azure-security&#34;&gt;Azure Security&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.microsoft.com/en-us/learn/browse/?products=azure&amp;amp;term=security&#34;&gt;Microsoft Learn - Security&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.microsoft.com/en-us/azure/security/security-best-practices-and-patterns&#34;&gt;Azure Security Best Practices&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://nostarch.com/azure&#34;&gt;Pentesting Azure Applications ($40)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;azure-openhacks&#34;&gt;Azure OpenHacks&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://openhack.microsoft.com/&#34;&gt;OpenHack Schedule&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/contact/</guid>
+      <description>&lt;p&gt;You can find me online at the following locations:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Twitter:&lt;/strong&gt; &lt;a href=&#34;https://www.twitter.com/da5is&#34;&gt;@da5is&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;LinkedIn:&lt;/strong&gt; &lt;a href=&#34;https://www.linkedin.com/in/da5is&#34;&gt;Matt Davis&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;FaceBook:&lt;/strong&gt; &lt;a href=&#34;https://www.facebook.com/da5is&#34;&gt;Matt Davis&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;GitHub:&lt;/strong&gt; &lt;a href=&#34;https://github.com/da5is&#34;&gt;da5is&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Kaybase:&lt;/strong&gt; &lt;a href=&#34;https://keybase.io/da5is&#34;&gt;da5is&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
