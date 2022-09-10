@@ -1,0 +1,2 @@
+User-Agent: *
+Sitemap: https://da5is.github.io/sitemap.xml
