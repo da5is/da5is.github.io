@@ -31,7 +31,8 @@ github_username:  da5is
 
 # Build settings
 # theme: minima
-remote_theme: /andrewhwanpark/brutalist-blog
+# remote_theme: /andrewhwanpark/brutalist-blog
+remote_theme: /daattali/beautiful-jekyll
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
