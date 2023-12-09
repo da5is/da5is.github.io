@@ -30,7 +30,8 @@ twitter_username: da5is
 github_username:  da5is
 
 # Build settings
-theme: minima
+#theme: minima
+remote_theme: brutalist-blog
 plugins:
   - jekyll-feed
 
