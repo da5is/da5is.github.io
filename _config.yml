@@ -44,11 +44,11 @@ permalink: /:year/:month/:day/:title/
 footer-links:
   # email: mkie0125@gmail.com
   # facebook:
-   github: da5is
+  #   github: da5is
   # instagram: andrewhwanpark
-   linkedin: da5is
+  # linkedin: da5is
   # rss: # just type anything here for a working RSS icon
-   twitter: da5is
+  # twitter: da5is
 
 plugins:
   - jekyll-seo-tag
