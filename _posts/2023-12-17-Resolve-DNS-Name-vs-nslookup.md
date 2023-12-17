@@ -12,4 +12,4 @@ From [Introduction to Network Trace Analysis 04: DNS (it's always DNS) - Microso
 
 > If you would like to perform DNS queries from the command line, I recommend using the PowerShell cmdlet, Resolve-DnsName which does use the native Windows DNS Client resolver. 
 
-This was news to me - oddly enough, it came in handy less than a few days after that page was posted.  I was troubleshooting an Azure VPN P2S DNS issue where NRPT was being used for resolution.  Resolve-DNSName resolved properly, nslookup didn't.
+This was news to me - oddly enough, it came in handy less than a few days after that page was posted.  I was troubleshooting an [Azure VPN P2S DNS issue where NRPT was being used for resolution](https://learn.microsoft.com/en-us/azure/vpn-gateway/azure-vpn-client-optional-configurations).  Resolve-DNSName resolved properly, nslookup didn't.
