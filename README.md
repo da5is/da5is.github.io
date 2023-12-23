@@ -1,99 +1,134 @@
-# brutalist-blog
+<div align="center">
+  <br>
+  <img src="/images/reverie-text.png" alt="Reverie" width="200"/>
+  <br>  
+  <p align="center">
+    <i>Support my work via <a href="https://paypal.me/AmitMerchant">Paypal</a></i>
+    •
+    <i>Would you be interested in <a href="https://www.producthunt.com/upcoming/reverie-pro">Reverie Pro</a>?</i>
+  </p>
+</div>
 
-## Introduction
+---
 
-![brutalist-blog dark mode homepage](https://user-images.githubusercontent.com/13270895/131266947-65f2ae83-7d9e-48d7-8cd6-05a1d59df0ab.png)
-![brutalist-blog light mode homepage](https://user-images.githubusercontent.com/13270895/131266950-3a0e0eff-0b15-4f60-ba22-231bcd78fb0c.png)
-![brutalist-blog mobile homepages](https://user-images.githubusercontent.com/13270895/131266952-e245630a-9874-4bde-952c-3c63ebd745e0.png)
+Reverie is a [Jekyll](https://jekyllrb.com/)-powered theme which is simple and opinionated. It's actually a fork of [jekyll-now](https://github.com/barryclark/jekyll-now) with some additional features and personal touches which I've implemented to suit my needs for my blog.
 
-brutalist-blog is a no frills, fully-responsive, hyper-minimalistic dark/light theme. The theme is heavily inspired by Mark Otto's personal site: https://markdotto.com/
+> [Theme demo](https://reverie.pages.dev/)
 
-Demo: https://andrewhwanpark.github.io/brutalist-blog/
+This is a plug-and-play Jekyll theme best suited to use on [GitHub Pages](https://pages.github.com) (or [Cloudflare Pages](https://pages.cloudflare.com/) if you want to have your repository private) without even setting up a local environment.
 
-My personal site that uses the same theme: https://andrewhwanpark.github.io/
+![](/images/reverie-demo.png)
 
-#### Features
+|  Responsiveness            |  Search | Categories |
+|---------------------|----------------------|----------------------|
+|![Responsiveness](/images/mobile-demo.png) | ![search](/images/search.png) | ![categories](/images/categories.png) |
 
-- Automatically changes from dark/light modes depending on the OS settings.
-- Easy integration with Google Analytics.
-- Generates XML sitemap and RSS Atom feed.
-- jekyll-seo-tag to add metadata tags for search engines and social networks to better index and display your site's content.
-- Full markdown support: code blocks and tables are automatically bootstrap components.
+# Table of Contents
+  - [Features overview](#features-overview)
+  - [Using Reverie on GitHub Pages](#using-reverie-on-github-pages)
+    - [1. Fork Reverie to your User Repository](#1-fork-reverie-to-your-user-repository)
+    - [2. Customize and view your site](#2-customize-and-view-your-site)
+    - [3. Publish your first blog post](#3-publish-your-first-blog-post)
+  - [Using Categories in Reverie](#using-categories-in-reverie)
+  - [Pagination](#pagination)
+  - [RSS](#rss)
+  - [Sitemap](#sitemap)
+  - [Emailware](#emailware)
+  - [The name?](#the-name)
+  - [License](#license)
 
-![code blocks](https://user-images.githubusercontent.com/13270895/126393675-dacc65f1-7dd2-4651-ae2b-0e77eda7cd11.png)
+## Features overview
 
-![tables](https://user-images.githubusercontent.com/13270895/126393680-7b7fae57-abd0-4843-a9a1-c4f334b5eaa4.png)
+- Clean and minimal design
+- Single column post layout
+- Command-line free fork-first workflow, using GitHub.com to create, customize and post to your blog
+- Fully responsive and mobile optimized theme
+- Sass/Coffeescript support using Jekyll 2.0
+- Free hosting on your GitHub Pages user site
+- All the SEO goodies come built-in
+- Markdown blogging
+- Supports [Pullquotes](https://reverie-jekyll.netlify.app/pullquotes/)
+- Syntax highlighting using Pygments
+    - [Dracula syntax theme](https://draculatheme.com/) included
+- Disqus commenting
+- Social media icons
+- Google Analytics integration
+- Supports [Google Analytics 4](https://support.google.com/analytics/answer/10089681?hl=en)
+- Fuzzy search across blog posts
+- Blog with pagination
+- Categorize posts out-of-the box
+- RSS Feed
+- Built-in sitemap
 
-## Installation
+> <p><i>Like this theme?</i> If so, consider donating a small amount that will help my maintaining this project further.<p>
+> You can support me via <a href="https://paypal.me/AmitMerchant">Paypal</a>.
 
-Clone this repo:
+## Using Reverie on GitHub Pages
 
-    $ git clone https://github.com/andrewhwanpark/brutalist-blog.git
+Setting up Reverie on GitHub Pages is as simple as it gets!
 
-If you haven't already, install bundler:
+### 1. Fork Reverie to your User Repository
 
-    $ gem install bundler
+Fork this repository, then rename the repository to `yourgithubusername.github.io`.
 
-And then execute:
+Alternatively, you can click the [`Use this template`](https://github.com/amitmerchant1990/reverie/generate) button if you want to create a repository with a clean commit history which will use Reverie as a template.
 
-    $ bundle install
+Your Jekyll blog will often be viewable immediately at <https://yourgithubusername.github.io> (if it's not, you can often force it to build by completing step 2).
 
-Serve the site:
+### 2. Customize and view your site
 
-    $ bundle exec jekyll serve
+Enter your site name, description, avatar and many other options by editing the `_config.yml` file. You can easily turn on Google Analytics tracking, Disqus commenting and social icons here.
 
-# Installation with Github Pages
+Making a change to `_config.yml` (or any file in your repository) will force GitHub Pages to rebuild your site with Jekyll. Your rebuilt site will be viewable a few seconds later at <https://yourgithubusername.github.io> - if not, give it ten minutes as GitHub suggests and it'll appear soon.
 
-After cloning the repo, checkout to the gh-pages branch.
+### 3. Publish your first blog post
 
-    $ git checkout gh-pages && git pull
+Delete all files from `_posts`directory and create a new file called `/_posts/2019-2-13-Hello-World.md` to publish your first blog post. That's all you need to do to publish your first blog post! This [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) might come in handy while writing the posts.
 
-In the directory:
+> You can add additional posts in the browser on GitHub.com too! Just hit the <kbd>Create new file</kbd> button in `/_posts/` to create new content. Just make sure to include the [front-matter](http://jekyllrb.com/docs/frontmatter/) block at the top of each new blog post and make sure the post's filename is in this format: year-month-day-title.md
 
-    $ bundle install
+## Using Categories in Reverie
 
-For local development:
+You can categorize your content based on `categories` in Reverie. For this, you just need to add `categories` in front matter like below:
 
-    $ bundle exec jekyll serve
+For adding single category:
 
-After tweaking with it, you can publish the site. Under your repository name, click Settings.
+```md
+categories: JavaScript
+```
 
-![tutorial](https://docs.github.com/assets/images/help/repository/repo-actions-settings.png)
+For adding multiple categories:
 
-In the left sidebar, click Pages.
+```md
+categories: [PHP, Laravel]
+```
 
-![tutorial 2](https://docs.github.com/assets/images/help/pages/pages-tab.png)
+The categorized content can be shown over this URL: <https://yourgithubusername.github.io/categories/>
 
-To see your published site, under "GitHub Pages", click your site's URL.
+## Pagination
 
-![tutorial 3](https://docs.github.com/assets/images/help/pages/click-pages-url-to-preview.png)
+Pagination of posts in Reverie works out-of-the-box. You only need to specify the number of posts you want on a single page in `_config.yml` and Reverie will take care of the rest.
 
-For a more detailed guide, visit this guide by Github: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll
+```yml
+paginate: 6
+```
 
-## Usage
+## RSS
 
-### First things first: \_config.yml
+Reverie comes with a [RSS feed](https://en.wikipedia.org/wiki/RSS) in-built. The generated RSS Feed of your blog can be found at <https://yourgithubusername.github.io/feed>. You can see the example RSS feed over [here](https://reverie-jekyll.netlify.app/feed.xml).
 
-First, you should change data in \_config.yml to the appropriate information such as your social links for the footer icons, avatar for navbar logo, title and name of the site, and more crucial information.
+## Sitemap
 
-### Adding content
+The generated sitemap of your blog can be found at <https://yourgithubusername.github.io/sitemap.xml>. You can see the example sitemap feed over [here](https://reverie-jekyll.netlify.app/sitemap.xml).
 
-In order to add permanent pages, add in similar fashion to about.md and portfolio.md and add apppropriate data to \_data/navigation.yml.
+## Emailware
+Reverie is an [emailware](https://en.wiktionary.org/wiki/emailware). Meaning, if you liked using this theme or it has helped you in any way, I'd like you send me an email at <bullredeyes@gmail.com> about anything you'd want to say about this software. I'd really appreciate it!
 
-In order to add blog posts, add in similar fashion to \_posts/2021-07-16-this-post-demonstrates-post-content-styles.md.
+## The name?
 
-### Custom style changes
+reverie - _a state of being pleasantly lost in one's thoughts; a daydream._<br><sup>/ˈrɛv(ə)ri/</sup> 
 
-If you wish to add custom styling through SCSS or CSS, you can add or edit \_sass/main.scss.
-
-### Custom domains with Github Pages
-
-Follow this simple guide: https://medium.com/@xiang_zhou/how-to-add-custom-domain-to-your-jekyll-blog-provided-that-you-built-your-site-using-github-6e1c8bf20afe
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/andrewhwanpark/brutalist-blog.
 
 ## License
 
-The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+MIT
