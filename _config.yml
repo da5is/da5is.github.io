@@ -39,6 +39,7 @@ tags_path: /tags/
 categories_path: /categories/
 paginate: 6
 paginate_path: "/page/:num/"
+google_analytics: G-7CLF421DBL
 
 # Exclude from processing.
 # The following items will not be processed, by default.
