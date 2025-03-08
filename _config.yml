@@ -31,8 +31,9 @@ github_username: da5is
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
+  - jekyll-seo-tag
 
-remote_theme: zivhub/monophase@main
+theme: monophase
 
 # Exclude from processing.
 # The following items will not be processed, by default.
