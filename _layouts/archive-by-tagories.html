@@ -1,0 +1,21 @@
+{% if include.type == "tags" %}
+  {% assign taxonomies = site.tags %}
+{% else %}
+  {% assign taxonomies = site.categories %}
+{% endif %}
+
+<div class="archive-taxonomies">
+  {% for taxonomy in taxonomies %}
+    <div class="taxonomy">
+      <h2 id="{{ taxonomy[0] }}">{{ taxonomy[0] }}</h2>
+      <ul>
+        {% for post in taxonomy[1] %}
+          <li>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            <small>{{ post.date | date_to_string }}</small>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endfor %}
+</div>

@@ -32,8 +32,13 @@ plugins:
   - jekyll-feed
   - jekyll-remote-theme
   - jekyll-seo-tag
+  - jekyll-paginate
 
 theme: monophase
+tags_path: /tags/
+categories_path: /categories/
+paginate: 6
+paginate_path: "/page/:num/"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
