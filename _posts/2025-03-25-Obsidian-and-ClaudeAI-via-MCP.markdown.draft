@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "Integrating Obsidian.md with Claude Desktop via Model Context Protocol (MCP)"
+date:   2025-03-25
+categories: ai, obsidian, claude
+description: "Installing MCP for Obsidian.md"
+---
+
+A Model Context Protocol (MCP) adapter was recently released that allows you to use Claude Desktop to interact with your Obsidian Notes.  To install it...
+
+1. Install the Claude Desktop client - the simplest way is to run `winget install claude` from a Windows Terminal.  It will prompt you for elevation if you're running in a standard user session.  Following that, log into the desktop client.
+2.  Install Node.js - again, via winget:  `winget install node.js`.
+3.  Restart your Windows terminal.
+4.  Install the MCP connector via NPX:  `npx @smithery/cli install mcp-obsidian --client claude` (via [https://github.com/smithery-ai/mcp-obsidian/tree/main])(https://github.com/smithery-ai/mcp-obsidian/tree/main).  It will prompt you for the location of your Obsidian Vault during the install.
+
+C:\Users\da5is\OneDrive\Documents\vault.pkm
