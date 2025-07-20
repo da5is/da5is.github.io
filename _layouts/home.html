@@ -18,11 +18,12 @@ layout: default
       <time datetime="{{ post.date | date_to_xmlschema }}" class="post-meta">{{ post.date | date_to_string }}</time>
 
       <p class="post-excerpt">
-        {% if post.description %}
+        <!-- {% if post.description %}
           {{ post.description | strip_html }}
         {% else %}
           {{ post.excerpt | strip_html }}
-        {% endif %}
+        {% endif %} -->
+        {{ post.content }}
       </p>
     </div>
   {% endfor %}
