@@ -3,7 +3,6 @@ layout: post
 title:  "Using Obsidian Copilot with a Local LLM"
 date:   2025-04-27
 categories: ai
-description: "Integrating Obsidian with Local LLMs via Obsidian Copilot and LM Studio."
 ---
 This is a quick document to walk through configuring Obsidian Copilot with LM Studio for local models and embeddings if you want to run the AI pieces fully locally.
 
