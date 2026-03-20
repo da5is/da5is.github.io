@@ -2,10 +2,8 @@
 layout: post
 title:  "Microsoft Foundry Local - Disconnected"
 date:   2026-03-20
-categories: ai, foundry
+categories: ai foundry azure
 ---
-# Azure Foundry Disconnected - Local Only
-
 This post shows you how to deploy Microsoft Foundry Local onto a disconnected machine with no access to the internet.  This requires having a machine with access to the internet to stage the model and installation media and a way of getting those items to the disconnected machine.  
 
 ## From a machine with access to the Internet:
