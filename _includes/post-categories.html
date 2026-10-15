@@ -1,0 +1,21 @@
+{%- assign categorized_post = include.post -%}
+{%- if categorized_post.categories.size > 0 -%}
+  {%- unless include.separator == false -%}
+    <span> • </span>
+  {%- endunless -%}
+  <span class="post-categories-section">
+    <i class="post-categories-icon fas fa-folder"></i>
+    <ul class="post-categories">
+      {%- for category in categorized_post.categories -%}
+        <li>
+          {%- assign slugified_category = category | slugify -%}
+          {%- if site.categories_path -%}
+            <a class="post-category" href="{{ site.categories_path | relative_url }}#{{ slugified_category }}">{{ category }}</a>
+          {%- else -%}
+            <span class="post-category">{{ category }}</span>
+          {%- endif -%}
+        </li>
+      {%- endfor -%}
+    </ul>
+  </span>
+{%- endif -%}

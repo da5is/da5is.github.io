@@ -262,6 +262,7 @@ a.pagination-item:hover {
   padding-top: var(--spacer);
   padding-bottom: var(--spacer);
   margin-top: var(--spacer-3);
+  text-align: center;
 
   p {
     margin: 0;
@@ -273,21 +274,17 @@ a.pagination-item:hover {
   padding: 0;
   margin: var(--spacer) 0;
   height: calc(var(--body-line-height) * var(--body-font-size));
+  display: flex;
+  justify-content: center;
+  gap: var(--spacer);
 }
 .social-icon-item {
-  float: left;
-  margin-right: var(--spacer);
+  margin: 0;
 }
 
 @media screen and (min-width: $md-screen) {
-  .footer {
-    display: flex;
-  }
-  .footer-column {
-    width: 100%;
-  }
   .social-icons {
-    margin: 0;
+    margin-bottom: 0;
   }
 }
 

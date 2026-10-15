@@ -10,7 +10,10 @@
 
     <li>
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      <small>{{ post.date | date_to_string }}</small>
+      <small>
+        {{ post.date | date_to_string }}
+        {% include post-categories.html post=post %}
+      </small>
     </li>
 
     {% if forloop.last %}
