@@ -98,6 +98,7 @@ You can also install the latest code via [`jekyll-remote-theme`](https://github.
 | `author.url` | String | --- | A URL of the website author |
 | `tags_path` | String | --- | A path to the archive-by-tags page; It is used by tags on each post |
 | `categories_path` | String | --- | A path to the archive-by-categories page; It is used by categories on each post |
+| `discussions_repo` | String | --- | GitHub repository used by Giscus and the likes/comments summaries |
 | `disqus` | String | --- | Disqus short name |
 | `google_analytics` | String | --- | Google Analytics 4 Measurement ID |
 
@@ -108,7 +109,7 @@ You can also install the latest code via [`jekyll-remote-theme`](https://github.
 | `description` | String | --- | A description of the current post |
 | `last_modified_at` | String | --- | The date of the last modification you made on a post after its publishing |
 | `author` | String or Array | --- | The author name(s) of the post |
-| `comments` | Boolean | `true` | Does enable the Disqus comment system |
+| `comments` | Boolean | `true` | Enables the Giscus comment system |
 | `math` | Boolean | `false` | Does enable MathJax on this page |
 
 ### Homepage
