@@ -24,6 +24,7 @@
         &raquo;
         <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         {% include post-categories.html post=post %}
+        {% include post-engagement.html post=post %}
       </li>
     {%- endfor -%}
   </ul>

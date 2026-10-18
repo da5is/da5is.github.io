@@ -106,6 +106,35 @@
   font-size: .85em;
 }
 
+.post-engagement {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .25em var(--spacer);
+  margin-top: -.5em;
+  margin-bottom: var(--spacer);
+  color: var(--body-color);
+  opacity: .7;
+  font-size: .85em;
+}
+
+.post-engagement[hidden] {
+  display: none;
+}
+
+li > .post-engagement {
+  margin-top: .25em;
+  margin-bottom: .5em;
+}
+
+.post-engagement-stat {
+  white-space: nowrap;
+}
+
+.post-engagement-icon {
+  margin-right: .2em;
+  color: var(--link-color);
+}
+
 .post-categories,
 .post-tags {
   display: inline-block;

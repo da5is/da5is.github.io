@@ -19,6 +19,7 @@ layout: default
         <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
         {% include post-categories.html post=post %}
       </div>
+      {% include post-engagement.html post=post %}
 
       <p class="post-excerpt">
         <!-- {% if post.description %}

@@ -26,6 +26,9 @@ url: "https://da5is.github.io" # the base hostname & protocol for your site, e.g
 twitter_username: da5is
 github_username: da5is 
 
+# GitHub Discussions repository used by Giscus and post engagement summaries.
+discussions_repo: da5is/da5is.github.io
+
 # Build settings
 # theme: minima
 plugins:
