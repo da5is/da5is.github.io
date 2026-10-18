@@ -12,7 +12,11 @@
         {% for post in taxonomy[1] %}
           <li>
             <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-            <small>{{ post.date | date_to_string }}</small>
+            <small>
+              {{ post.date | date_to_string }}
+              {% include post-categories.html post=post %}
+            </small>
+            {% include post-engagement.html post=post %}
           </li>
         {% endfor %}
       </ul>

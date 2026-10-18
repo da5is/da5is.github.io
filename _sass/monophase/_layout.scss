@@ -106,6 +106,35 @@
   font-size: .85em;
 }
 
+.post-engagement {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .25em var(--spacer);
+  margin-top: -.5em;
+  margin-bottom: var(--spacer);
+  color: var(--body-color);
+  opacity: .7;
+  font-size: .85em;
+}
+
+.post-engagement[hidden] {
+  display: none;
+}
+
+li > .post-engagement {
+  margin-top: .25em;
+  margin-bottom: .5em;
+}
+
+.post-engagement-stat {
+  white-space: nowrap;
+}
+
+.post-engagement-icon {
+  margin-right: .2em;
+  color: var(--link-color);
+}
+
 .post-categories,
 .post-tags {
   display: inline-block;
@@ -262,6 +291,7 @@ a.pagination-item:hover {
   padding-top: var(--spacer);
   padding-bottom: var(--spacer);
   margin-top: var(--spacer-3);
+  text-align: center;
 
   p {
     margin: 0;
@@ -273,21 +303,17 @@ a.pagination-item:hover {
   padding: 0;
   margin: var(--spacer) 0;
   height: calc(var(--body-line-height) * var(--body-font-size));
+  display: flex;
+  justify-content: center;
+  gap: var(--spacer);
 }
 .social-icon-item {
-  float: left;
-  margin-right: var(--spacer);
+  margin: 0;
 }
 
 @media screen and (min-width: $md-screen) {
-  .footer {
-    display: flex;
-  }
-  .footer-column {
-    width: 100%;
-  }
   .social-icons {
-    margin: 0;
+    margin-bottom: 0;
   }
 }
 
