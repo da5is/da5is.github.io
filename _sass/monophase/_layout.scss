@@ -77,6 +77,11 @@
     .post-excerpt {
       margin-bottom: 0;
     }
+
+    > .post-engagement--timeline {
+      margin-top: var(--spacer);
+      margin-bottom: 0;
+    }
   }
 }
 

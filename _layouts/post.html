@@ -48,7 +48,9 @@ layout: default
   {{ content }}
 
   {% if page.comments != false %}
-    {% include giscus.html %}
+    <div id="comments">
+      {% include giscus.html %}
+    </div>
   {% endif %}
 </article>
 

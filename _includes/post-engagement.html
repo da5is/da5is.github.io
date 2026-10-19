@@ -1,10 +1,10 @@
-<div class="post-engagement" data-post-engagement data-post-url="{{ include.post.url | absolute_url }}" hidden>
-  <span class="post-engagement-stat">
+<div class="post-engagement{% if include.timeline %} post-engagement--timeline{% endif %}" data-post-engagement data-post-url="{{ include.post.url | absolute_url }}" hidden>
+  <a class="post-engagement-stat" href="{{ include.post.url | relative_url }}{% if include.post.comments != false %}#comments{% endif %}">
     <i class="post-engagement-icon fas fa-heart" aria-hidden="true"></i>
     <span data-like-count>0</span> likes
-  </span>
-  <span class="post-engagement-stat">
+  </a>
+  <a class="post-engagement-stat" href="{{ include.post.url | relative_url }}{% if include.post.comments != false %}#comments{% endif %}">
     <i class="post-engagement-icon fas fa-comment" aria-hidden="true"></i>
     <span data-comment-count>0</span> comments
-  </span>
+  </a>
 </div>
