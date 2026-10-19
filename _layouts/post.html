@@ -63,11 +63,13 @@ layout: default
           <a href="{{ post.url | relative_url }}">
             {{ post.title }}
           </a>
-          {% include post-engagement.html post=post %}
-          <small>
-            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
-            {% include post-categories.html post=post %}
-          </small>
+          <div class="related-meta">
+            <small>
+              <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
+              {% include post-categories.html post=post %}
+            </small>
+            {% include post-engagement.html post=post %}
+          </div>
         </li>
       {% endfor %}
     </ul>

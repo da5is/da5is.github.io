@@ -218,8 +218,27 @@ a[href^="#fnref:"] {
   padding-left: 0;
   list-style: none;
 
-  small {
-    opacity: .5;
+  li {
+    margin-bottom: var(--spacer);
+  }
+
+  .related-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: .25em var(--spacer);
+    font-size: .85em;
+    opacity: .65;
+
+    small {
+      font-size: inherit;
+    }
+
+    .post-engagement {
+      margin: 0;
+      opacity: 1;
+      font-size: inherit;
+    }
   }
 }
 
